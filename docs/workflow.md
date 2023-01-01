@@ -36,8 +36,8 @@
 
 打开畅聊后台，点击聊天框上方的自动回复按钮
 
-![找自动回复第一步](../imgs/autoResp1.png)
+![找自动回复第一步](/imgs/autoResp1.png)
 
-![找自动回复第二步](../imgs/autoResp2.png) 
+![找自动回复第二步](/imgs/autoResp2.png) 
 
 

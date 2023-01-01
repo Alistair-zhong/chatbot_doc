@@ -6,10 +6,10 @@
 
 * 常规方式: 点击专页后台的**设置** > **高级消息**
 
-![找绑定的机器人第一步](../imgs/lookUpBots1.png) 
+![找绑定的机器人第一步](/imgs/lookUpBots1.png) 
 
-![找绑定的机器人第二步](../imgs/lookUpBots2.png) 
+![找绑定的机器人第二步](/imgs/lookUpBots2.png) 
 
 ## 如何获取专页 ID
 
-![找专页ID](../imgs/findPageID.png)
+![找专页ID](/imgs/findPageID.png)
