@@ -10,7 +10,7 @@
 
 ## 点击畅聊链接为什么不走流程
 
-1. 先检查在订阅者中，不走流程的线索显示的来源是什么。如果显示 `direct`，说明用户点击的链接格式不对（[正确的格式](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.rmzfv081n919)），如果订阅者没有信息，头像都是灰色的，说明没有权限，请[刷新权限](./auth#如何刷新权限)，同时也检查是否开启[错误通知](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#heading=h.t7x9ay52gp0g)，避免错过最佳处理时间。
+1. 先检查在订阅者中，不走流程的线索显示的来源是什么。如果显示 `direct`，说明线索点击的链接格式不对（[正确的格式](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.rmzfv081n919)），如果订阅者没有信息，头像都是灰色的，说明没有权限，请[刷新权限](./auth#如何刷新权限)，同时也检查是否开启[错误通知](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#heading=h.t7x9ay52gp0g)，避免错过最佳处理时间。
 2. 如果上述来源正确，而且有追踪码，那么说明是流程设置问题，检查流程中的过滤条件是否正确
 3. 如果过滤条件正确或者没有设置过滤条件，请检查 设置 > 日志 中是否有 send_message 类型的报错。（[错误日志对照表](./ERROR.md)）
 4. 如果以上步骤排查了都没问题，那么你可能正在遭遇 `bug`🙀，请联系开发人员
@@ -28,7 +28,7 @@
 首先需要理解自动发送消息的三种来源：
 * 第一种是 `fb` 专页后台的自动回复设置 
 * 第二种是 `fb` 默认的不可修改的自动消息，如老用户点击贴文下的发消息按钮时，专页会发送类似 “你好， XX， 请问有什么可以帮助你的吗？”
-* 第三种是代理机器人。咱们使用的 `chatbot` 就是属于第三种代理机器人，外邦也有许多代理机器人，如 `manychat`
+* 第三种是代理机器人。咱们使用的 `chatbot` 就是属于第三种代理机器人，网络上也有许多其他代理机器人，如 `manychat`
 
 理解了三种来源后，可以根据发送消息的内容判断来源，如果口气比较官方，可以先检查是否属于前两种。不会检查专页自动回复设置的请看下一个问题。如果没找到，并且 `chatbot` 中也没有此类消息，那么检查专页是否有绑定第三方机器人，检查步骤请看[此处](./other#如何查看专页是否绑定第三方机器人)。
 

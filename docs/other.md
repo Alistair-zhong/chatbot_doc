@@ -12,4 +12,4 @@
 
 ## 如何获取专页 ID
 
-![找专页ID](/imgs/findPageID.png)
+![找专页ID](/imgs/findPageID.jpg)
