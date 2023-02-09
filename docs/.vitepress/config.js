@@ -22,17 +22,48 @@ export default {
             { text: '简介', link: '/guide/introduction.md',},
             { text: '快速开始', link: '/guide/quick_start.md',},
             { text: '权限', link: '/guide/auth.md',},
-            { text: '成长工具', collapsible: true, items:[
+            { text: '成长工具', collapsed: true, items:[
               { text: 'ref 触发器', link: '/guide/widget/ref.md',},
               { text: '评论触发器', link: '/guide/widget/comment.md',},
+              { text: '双平台切换', link: '/guide/widget/switch.md',},
+              { text: '进阶技巧', link: '/guide/widget/advance.md',},
             ]},
-            { text: '工作流', collapsible: true, items:[
+            { text: '工作流', collapsed: true, items:[
               { text: '基础概念', link: '/guide/workflow/concepts.md',},
+              { text: '演示案例', link: '/guide/workflow/demo.md',},
+              { text: '进阶技巧', link: '/guide/workflow/advance.md',},
+              { text: '节点', items: [
+                { text: '发送消息节点', link: '/guide/workflow/node/message.md',},
+                { text: '条件节点', link: '/guide/workflow/node/condition.md',},
+                { text: '执行节点', link: '/guide/workflow/node/action.md',},
+                { text: '延时节点', link: '/guide/workflow/node/smart_delay.md',},
+                { text: '随机节点', link: '/guide/workflow/node/random.md',},
+                { text: '运行工作流节点', link: '/guide/workflow/node/start_flow.md',},
+              ],},
+              { text: '组件', items: [
+                { text: '文本', link: '/guide/workflow/component/text.md',},
+                { text: '延迟', link: '/guide/workflow/component/delay.md',},
+                { text: '图片', link: '/guide/workflow/component/image.md',},
+                { text: '输入', link: '/guide/workflow/component/input.md',},
+                { text: '卡片', link: '/guide/workflow/component/card.md',},
+                { text: '视频', link: '/guide/workflow/component/video.md',},
+                { text: '音频', link: '/guide/workflow/component/audio.md',},
+                { text: '文件', link: '/guide/workflow/component/file.md',},
+                { text: '快速回复按钮', link: '/guide/workflow/component/quick_reply.md',},
+              ],},
             ]},
+            { text: '首页统计', link: '/guide/statistic.md',},
             { text: '订阅者', link: '/guide/subscriber.md',},
             { text: '非订阅者', link: '/guide/un_subscriber.md',},
-            { text: '设置', link: '/guide/setting',},
-            { text: '专页管理', link: '/guide/page.md',},
+            { text: '设置', collapsed: true, items:[
+              { text: '自定义变量', link: '/guide/setting/var.md',},
+            ]},
+            { text: '专页管理', collapsed: true, items:[
+              { text: '获取专页 ID', link: '/guide/page/id.md',},
+              { text: '给其他系统账户授权', link: '/guide/page/add_role.md',},
+              { text: '解绑专页并删除所有数据', link: '/guide/page/delete_page.md',},
+            ]},
+            { text: '政策', link: '/guide/policy.md'},
           ]
         }
       ],

@@ -1,14 +1,97 @@
-# ChatBot 版本更新日志
----
-此文件格式遵循 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+# ChatBot Change Log
 
+---
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+
+## [9.4.0] - 2023-02-02
+
+### 新增
+
+- `手动触发` 工作流功能，结合 `专字登记插件` 插件使用，可以在 Facebook 聊天界面手动发送工作流给用户
+
+### 修复
+
+- 给 `24` 小时外线索发信息触发 24 小时政策
+
+## [9.3.5] - 2023-02-01
+
+### 修复
+
+- 切换成长工具自动暂停问题
+
+## [9.3.4] - 2023-01-31
+
+### 新增
+
+- 节点历史信息，解决已发出信息无法走流程问题，`input` 组件五天内有效
+
+## [9.3.2] - 2023-01-30
+
+### 修复
+
+- `input` 组件重试次数为零时，无法走流程问题
+
+## [9.3.1] - 2023-01-23
+
+### 修复
+
+- 修复部分漏评论问题
+
+- 解决 404 问题
+
+## [9.3.0] - 2023-01-15
+
+## 更新
+
+- 兼容旧同步接口，不返回评论时间戳
+
+## [9.2.0] - 2023-01-23
+
+### 修复
+
+- 新用户无法回复评论
+
+- `input` 按钮点击不生效
+
+## [9.2.0] - 2023-01-23
+### 新增
+
+- 增加 `用户输入` 组件，可以针对线索手动输入的信息走不同的流程,也可以保存线索的输入信息。[详情请看](/guide/workflow/component/input.md)
+
+### 更新
+
+- 评论链接增加评论时间戳，支持准确分析某个时间段某个帖文的来人
+
+### 修复
+
+- 随机节点后每个分支节点和按钮点击次数不再显示为零
+
+## [9.1.0] - 2023-01-08
+
+### 新增
+
+- 谷歌脚本批量更新图片功能，[详情请看](https://docs.google.com/document/d/1EoK4H5VEg7ZalQS2X6_T0I3gNWMvM0HiahBUhyV9uw0/edit)
+
+- 日志页面增加 `错误对照表`
+
+- 日志页面增加鼠标悬停 `描述` 列时浮现解决方案
+
+- 评论成长工具停止切换时显示红灯并提示警告
+
+### 修复
+
+- 点击开启统计后的链接不会再跳转到 `ChatBot` 登录页面
+
+### 移除
+
+- ADGuard 广告弹窗检测
 ## [9.0.0] - 2022-12-29
 
 ### 新增
 
 - `评论多留言` 功能，允许一次性回复多条评论。<span style="color:red" >严禁</span>绑定多个机器人同时开启此功能来回复 4 条及以上的评论。
 
-- `多平台切换评论成长工具`，实现定时切换平台发消息，主要目的是为缓解 「 api 速率」问题。[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.1kl3p2m2bnjw)
+- `多平台切换评论成长工具`，实现定时切换平台发消息，主要目的是为缓解 「 api 速率」问题。[详情请看](/guide/widget/switch.md)
 
 ### 更新
 
@@ -26,7 +109,7 @@
 
 ### 新增
 
-- 首页增加 `多专页订阅者统计走势图`，最多可同时查看 `20` 个专页的数据，并有爆贴高亮提示。[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.a3w38t4zxw9t)
+- 首页增加 `多专页订阅者统计走势图`，最多可同时查看 `20` 个专页的数据，并有爆贴高亮提示。[详情请看](/guide/statistic.html#多专页订阅者走势图)
 
 - 专页管理 > 列表 中增加一列专页 ID，直接单击即可复制
 
@@ -44,9 +127,9 @@
 
 ### 新增
 
-- 增加变量库，并允许通过 `谷歌表格脚本` 批量更新变量，以此方案可以解决频繁替换鱼塘链接问题。[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.ugo4717saq3)
+- 增加变量库，并允许通过 `谷歌表格脚本` 批量更新变量，以此方案可以解决频繁替换鱼塘链接问题。[详情请看](/guide/setting/var.md)
 
-- 跨平台跨专业复制节点。[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.oa4olstt7id4)
+- 跨平台跨专业复制节点。[详情请看](/guide/workflow/advance.html#跨平台跨专业批量复制节点)
 
 - `魔术字段`中增加 `page_name`，自动填充当前专页的名字
 
@@ -72,13 +155,13 @@
 
 ### 新增
 
-- 显示**非订阅者**列表，可以由此查看当天触发评论成长工具的且从未未回复信息的线索。当天的未订阅者加上当天来的订阅者就是后天当天来的总数.[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#heading=h.6c8y303cu8l4)
+- 显示**非订阅者**列表，可以由此查看当天触发评论成长工具的且从未未回复信息的线索。当天的未订阅者加上当天来的订阅者就是后天当天来的总数.
 
-- 过滤器中增加 `posts`、`is_subscribed` 条件。选择 `posts` 条件后输入 `帖文ID ` 即可筛选出触发过此帖文评论成长工具的线索。 `is_subscribed` 条件用于工作流中，组合上 `last_user_interaction_at` 互动时间后可以对非订阅者做频率限制，[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.9tq4y26vtx7m)
+- 过滤器中增加 `posts`、`is_subscribed` 条件。选择 `posts` 条件后输入 `帖文ID ` 即可筛选出触发过此帖文评论成长工具的线索。 `is_subscribed` 条件用于工作流中，组合上 `last_user_interaction_at` 互动时间后可以对非订阅者做频率限制，[详情请看](/guide/workflow/node/condition.html#新用户和五天前互动过的用户才触发流程-包括未订阅用户也是五天)
 
 - 消息节点增加 `特殊消息` 类型，可允许在**24** 小时外发消息，或者是评论工作流中使用正常发送多条消息，不受评论流程只发一条消息的限制。。注意，使用评论成长工具的工作流第一个消息节点必须是**评论回复**，这不能变。如果想通过 `特殊消息` 新类型发送更多的消息，请注意连续发送消息的数量，如果数量过多，线索反感后举报专页，引起 `facebook` 审查可能会导致专页**受限**，所以不要贪多。
 
-- 评论成长工具增加评论导入功能，允许直接从谷歌表格上粘贴多行评论并复制过来，一次性生成多条评论。此功能支持魔术字段，[详情请看](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.bbm8116y0q91)
+- 评论成长工具增加评论导入功能，允许直接从谷歌表格上粘贴多行评论并复制过来，一次性生成多条评论。此功能支持魔术字段，[详情请看](/guide/widget/advance.html#评论导入)
 
 
 ### 修复
@@ -114,7 +197,7 @@
 
 ### 新增
 
-- 消息节点中增加 `音频`、`视频`、 `文件` 三个组件。允许给用户发送音频等各样文件，提高流程的真实性和趣味性。比如给线索发送自己录制的自我介绍或歌曲。建议用音频而不是视频，视频加载速度会比较慢，而且一般需要更多的流量，更好的网络 [详情...](https://docs.google.com/document/d/16OgOYGL2u-8wV9VGScvGph4LTSDDi35IzPUvJSYHWpM/edit#bookmark=id.hzjev5jqwzd9)
+- 消息节点中增加 [音频](./guide/workflow/component/audio.md)、[视频](./guide/workflow/component/video.md)、 [文件](./guide/workflow/component/file.md) 三个组件。允许给用户发送音频等各样文件，提高流程的真实性和趣味性。比如给线索发送自己录制的自我介绍或歌曲。建议用音频而不是视频，视频加载速度会比较慢，而且一般需要更多的流量，更好的网络
 
 ## [4.0.0] - 2022-04-26
 
