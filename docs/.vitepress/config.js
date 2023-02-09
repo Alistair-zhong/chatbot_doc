@@ -1,6 +1,7 @@
 export default {
   lastUpdated: true,
   title: 'ChatBot 使用手册',
+  srcDir: './guide',
   description: "",
   themeConfig: {
     logo: '/logo.png',
@@ -14,7 +15,7 @@ export default {
       { text: '更新记录', link: '/CHANGELOG.md' }
     ],
     sidebar: {
-      '/guide/': [
+      '/': [
         {
           text: '使用说明',
           collapsible: true,
