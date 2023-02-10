@@ -1,6 +1,6 @@
 {
   "name": "chatbot_doc",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "ChatBot 常见问题手册",
   "main": "index.js",
   "license": "MIT",

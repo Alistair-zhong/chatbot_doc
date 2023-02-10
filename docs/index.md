@@ -6,7 +6,7 @@ hero:
   text: Powerful Messenger Bot
   tagline: 自动评论，自动消息流程，数据统计，多平台联动...
   image:
-    src: /imgs/logo.png
+    src: /logo.png
     alt: ChatBot
   actions:
     - theme: brand

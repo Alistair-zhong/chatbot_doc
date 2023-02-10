@@ -4,7 +4,7 @@ export default {
   cleanUrls: true,
   description: "",
   themeConfig: {
-    logo: '/imgs/logo.png',
+    logo: 'logo.png',
     siteTitle: 'ChatBot 使用手册',
     outline: 'deep',
     outlineTitle: '大纲',
