@@ -1,7 +1,6 @@
 export default {
   lastUpdated: true,
   title: 'ChatBot 使用手册',
-  cleanUrls: true,
   description: "",
   themeConfig: {
     logo: 'logo.png',
