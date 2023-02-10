@@ -2,4 +2,5 @@
 /docs/.vitepress
 .DS_Store
 /docs/imgs/.DS_Store
+/docs/.DS_Store
 

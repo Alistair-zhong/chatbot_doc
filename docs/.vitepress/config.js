@@ -1,11 +1,10 @@
 export default {
   lastUpdated: true,
   title: 'ChatBot 使用手册',
-  // srcDir: './docs',
   cleanUrls: true,
   description: "",
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/imgs/logo.png',
     siteTitle: 'ChatBot 使用手册',
     outline: 'deep',
     outlineTitle: '大纲',
@@ -80,6 +79,10 @@ export default {
           ]
         }
       ]
+    },
+    footer: {
+      message: '',
+      copyright: 'Copyright © 2023-present chatbot'
     },
     algolia: { 
       appId: 'CXJ93XJ3HY', 

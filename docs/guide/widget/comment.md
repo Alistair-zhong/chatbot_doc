@@ -10,7 +10,7 @@
 
 ### 录屏
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VL95NCq3WjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/VL95NCq3WjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### 步骤详解
 
