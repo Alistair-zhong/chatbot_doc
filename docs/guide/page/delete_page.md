@@ -2,7 +2,7 @@
 
 ## 录屏
 
-![解绑专页并删除数据](/imgs/delete_page.gif)
+![解绑专页并删除数据](../../imgs/delete_page.gif)
 
 ## 步骤详解
 

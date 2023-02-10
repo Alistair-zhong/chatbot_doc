@@ -109,7 +109,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### 新增
 
-- 首页增加 `多专页订阅者统计走势图`，最多可同时查看 `20` 个专页的数据，并有爆贴高亮提示。[详情请看](/guide/statistic.html#多专页订阅者走势图)
+- 首页增加 `多专页订阅者统计走势图`，最多可同时查看 `20` 个专页的数据，并有爆贴高亮提示。[详情请看](/guide/statistic#多专页订阅者走势图)
 
 - 专页管理 > 列表 中增加一列专页 ID，直接单击即可复制
 
@@ -129,7 +129,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - 增加变量库，并允许通过 `谷歌表格脚本` 批量更新变量，以此方案可以解决频繁替换鱼塘链接问题。[详情请看](/guide/setting/var.md)
 
-- 跨平台跨专业复制节点。[详情请看](/guide/workflow/advance.html#跨平台跨专业批量复制节点)
+- 跨平台跨专业复制节点。[详情请看](/guide/workflow/advance#跨平台跨专业批量复制节点)
 
 - `魔术字段`中增加 `page_name`，自动填充当前专页的名字
 
@@ -157,11 +157,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - 显示**非订阅者**列表，可以由此查看当天触发评论成长工具的且从未未回复信息的线索。当天的未订阅者加上当天来的订阅者就是后天当天来的总数.
 
-- 过滤器中增加 `posts`、`is_subscribed` 条件。选择 `posts` 条件后输入 `帖文ID ` 即可筛选出触发过此帖文评论成长工具的线索。 `is_subscribed` 条件用于工作流中，组合上 `last_user_interaction_at` 互动时间后可以对非订阅者做频率限制，[详情请看](/guide/workflow/node/condition.html#新用户和五天前互动过的用户才触发流程-包括未订阅用户也是五天)
+- 过滤器中增加 `posts`、`is_subscribed` 条件。选择 `posts` 条件后输入 `帖文ID ` 即可筛选出触发过此帖文评论成长工具的线索。 `is_subscribed` 条件用于工作流中，组合上 `last_user_interaction_at` 互动时间后可以对非订阅者做频率限制，[详情请看](/guide/workflow/node/condition#新用户和五天前互动过的用户才触发流程-包括未订阅用户也是五天)
 
 - 消息节点增加 `特殊消息` 类型，可允许在**24** 小时外发消息，或者是评论工作流中使用正常发送多条消息，不受评论流程只发一条消息的限制。。注意，使用评论成长工具的工作流第一个消息节点必须是**评论回复**，这不能变。如果想通过 `特殊消息` 新类型发送更多的消息，请注意连续发送消息的数量，如果数量过多，线索反感后举报专页，引起 `facebook` 审查可能会导致专页**受限**，所以不要贪多。
 
-- 评论成长工具增加评论导入功能，允许直接从谷歌表格上粘贴多行评论并复制过来，一次性生成多条评论。此功能支持魔术字段，[详情请看](/guide/widget/advance.html#评论导入)
+- 评论成长工具增加评论导入功能，允许直接从谷歌表格上粘贴多行评论并复制过来，一次性生成多条评论。此功能支持魔术字段，[详情请看](/guide/widget/advance#评论导入)
 
 
 ### 修复

@@ -2,7 +2,7 @@
 
 ## 录屏
 
-![授权其他账户](/imgs/add_role.gif)
+![授权其他账户](../../imgs/add_role.gif)
 
 ### 步骤详解
 

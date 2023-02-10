@@ -2,7 +2,7 @@
 
 ## 录屏
 
-![获取专页 ID](/imgs/get_page_id.gif)
+![获取专页 ID](../../imgs/get_page_id.gif)
 
 ## 步骤详解
 

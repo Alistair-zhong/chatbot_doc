@@ -1,7 +1,8 @@
 export default {
   lastUpdated: true,
   title: 'ChatBot 使用手册',
-  srcDir: './guide',
+  // srcDir: './guide',
+  cleanUrls: true,
   description: "",
   themeConfig: {
     logo: '/logo.png',
@@ -15,12 +16,12 @@ export default {
       { text: '更新记录', link: '/CHANGELOG.md' }
     ],
     sidebar: {
-      '/': [
+      '/guide/': [
         {
           text: '使用说明',
           collapsible: true,
           items: [
-            { text: '简介', link: '/guide/introduction.md',},
+            // { text: '简介', link: '/guide/introduction.md',},
             { text: '快速开始', link: '/guide/quick_start.md',},
             { text: '权限', link: '/guide/auth.md',},
             { text: '成长工具', collapsed: true, items:[
